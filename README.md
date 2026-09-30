@@ -44,6 +44,8 @@ sudo mv ngrok /usr/local/bin/
 
 ngrok config add-authtoken <YOUR_AUTHTOKEN>
 
+ngrok config add-authtoken 3K3NP7sTN3MNE6L35r6xi3Db2eP_5uAqExGEy8Uq8cyn9m513
+
 ngrok http 80
 
 mkdir contact-form-frontend
