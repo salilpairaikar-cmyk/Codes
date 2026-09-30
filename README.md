@@ -1,6 +1,7 @@
 # Codes
 sudo mkdir -p /var/www/html
 
+sudo apt install apache2 php libapache2-mod-php mysql-server php-mysql -y
 sudo apt install apache2 -y
 
 sudo nano /var/www/html/submit.php
