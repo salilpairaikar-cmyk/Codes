@@ -1,4 +1,6 @@
 # Codes
+sudo nano /var/www/html/submit.php
+
 <?php
 $conn = new mysqli("localhost", "root", "", "web_project");
 
