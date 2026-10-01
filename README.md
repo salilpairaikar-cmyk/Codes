@@ -72,3 +72,6 @@ cd contact-form-frontend
 
 
 sudo mysql -e "USE web_project; SELECT * FROM contacts;"
+ngrok config add-authtoken 3K6DrcCEPaozoOELYnXwVM5OEOT_5cP5KW3KBJsN9uDLbE7RR
+
+
