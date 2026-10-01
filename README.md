@@ -46,7 +46,7 @@ ngrok config add-authtoken <YOUR_AUTHTOKEN>
 
 ngrok config add-authtoken 3K3NP7sTN3MNE6L35r6xi3Db2eP_5uAqExGEy8Uq8cyn9m513
 
-ngrok config add-authtoken 3K3NP7sTN3MNE6L35r6xi3Db2eP_5uAqExGEy8Uq8cyn9m513
+ngrok config add-authtoken 3K6GPlhCet3mV1F9OLQdBN4adsd_42by35JaFCMwcRqByYH2z
 
 ngrok http 80
 
