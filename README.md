@@ -69,6 +69,13 @@ cd contact-form-frontend
 </body>
 </html>
 
+-- Create the database if it doesn't exist
+CREATE DATABASE IF NOT EXISTS web_project;
+
+-- Select the database
+USE web_project;
+
+-- Create the contacts table
 CREATE TABLE IF NOT EXISTS contacts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -76,6 +83,18 @@ CREATE TABLE IF NOT EXISTS contacts (
     message TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    EMAIL VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL
+);
 
+CREATE TABLE IF NOT EXISTS contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    EMAIL VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL
+);
 
 
