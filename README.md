@@ -9,7 +9,7 @@ sudo mkdir -p /var/www/html
 sudo nano /var/www/html/submit.php
 
 sudo nano /var/www/html/submit.php
-
+```
 <?php
 $conn = new mysqli("localhost", "root", "", "web_project");
 
@@ -31,7 +31,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-```
 
 CREATE USER 'webuser'@'localhost' IDENTIFIED BY 'password123';
 GRANT ALL PRIVILEGES ON web_project.* TO 'webuser'@'localhost';
