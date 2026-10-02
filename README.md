@@ -44,7 +44,7 @@ wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 
 sudo mv ngrok /usr/local/bin/
 
-ngrok config add-authtoken <YOUR_AUTHTOKEN>
+ngrok config add-authtoken 3K96wmt2gd1AVhPireELTdCkddl_5T1xBiDUGzC6QK6FSX5xz
 
 ngrok http 80
 
