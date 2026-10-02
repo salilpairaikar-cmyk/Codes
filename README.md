@@ -1,8 +1,10 @@
 # Codes
-sudo mkdir -p /var/www/html
+
 
 sudo apt install apache2 php libapache2-mod-php mysql-server php-mysql -y
 sudo apt install apache2 -y
+
+sudo mkdir -p /var/www/html
 
 sudo nano /var/www/html/submit.php
 
@@ -29,7 +31,7 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-```[cite: 1]
+
 CREATE USER 'webuser'@'localhost' IDENTIFIED BY 'password123';
 GRANT ALL PRIVILEGES ON web_project.* TO 'webuser'@'localhost';
 FLUSH PRIVILEGES;
@@ -43,10 +45,6 @@ wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 sudo mv ngrok /usr/local/bin/
 
 ngrok config add-authtoken <YOUR_AUTHTOKEN>
-
-ngrok config add-authtoken 3K3NP7sTN3MNE6L35r6xi3Db2eP_5uAqExGEy8Uq8cyn9m513
-
-ngrok config add-authtoken 3K6GPlhCet3mV1F9OLQdBN4adsd_42by35JaFCMwcRqByYH2z
 
 ngrok http 80
 
@@ -62,7 +60,6 @@ cd contact-form-frontend
 </head>
 <body>
     <h1>Contact Us</h1>
-    <!-- Replace the action URL with your VM IP or Ngrok forwarding URL -->
     <form action="http://<VM_IP_OR_NGROK_URL>/submit.php" method="POST">
         <input type="text" name="name" placeholder="Enter your name" required><br><br>
         <input type="email" name="email" placeholder="Enter your email" required><br><br>
@@ -73,7 +70,5 @@ cd contact-form-frontend
 </html>
 
 
-sudo mysql -e "USE web_project; SELECT * FROM contacts;"
-ngrok config add-authtoken 3K6DrcCEPaozoOELYnXwVM5OEOT_5cP5KW3KBJsN9uDLbE7RR
 
 
