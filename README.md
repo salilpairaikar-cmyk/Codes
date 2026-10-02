@@ -31,6 +31,7 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+```
 
 CREATE USER 'webuser'@'localhost' IDENTIFIED BY 'password123';
 GRANT ALL PRIVILEGES ON web_project.* TO 'webuser'@'localhost';
