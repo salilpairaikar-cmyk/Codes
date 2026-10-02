@@ -90,11 +90,6 @@ CREATE TABLE IF NOT EXISTS contacts (
     message TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS contacts (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    EMAIL VARCHAR(150) NOT NULL,
-    message TEXT NOT NULL
-);
-
+INSERT INTO contacts (name, EMAIL, message)
+VALUES ('John Doe', 'john.doe@example.com', 'Hello, this is a test message!');
 
